@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero" style="padding: 6rem 0 3rem;">
+  <div class="container">
+    <div class="hero-meta">{{ t.tl_meta }}</div>
+    <h1 style="font-size: clamp(2rem, 5vw, 3.5rem);">{{ t.tl_h1 }}</h1>
+    <p class="hero-sub">{{ t.tl_sub | trim }}</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    {% for era in eras %}
+    <div class="era-block">
+      <div class="era-header">
+        <div>
+          <div class="era-meta">{{ t.tl_era_label }} / {{ "%02d" % loop.index }}</div>
+          <h2 class="era-title">{{ tr(era.label) }}</h2>
+          <div class="era-range">{{ tr(era.range) }}</div>
+        </div>
+        <p class="era-desc">{{ tr(era.description) | trim }}</p>
+      </div>
+
+      <div class="events">
+        {% for event in era_events[era.id] %}
+        <article class="event" id="{{ event.id }}">
+          <div class="event-meta">
+            <span class="event-id">{{ event.id }}</span>
+            {% if event.year_label %}<span class="event-year">{{ tr(event.year_label) }}</span>{% endif %}
+          </div>
+          <h3>{{ tr(event.title) }}</h3>
+          <p class="event-desc">{{ tr(event.description) | trim }}</p>
+
+          {% if event.knowledge_changes %}
+            {% for kc in event.knowledge_changes %}
+            <div class="knowledge-change">
+              <span class="knowledge-actor">{{ kc.actor }}</span> — {{ tr(kc.learns) }}
+            </div>
+            {% endfor %}
+          {% endif %}
+
+          {% if event.note %}
+          <div class="event-note">{{ tr(event.note) }}</div>
+          {% endif %}
+
+          {% if event.sources %}
+          <div class="event-sources">
+            {% for source in event.sources %}
+            <span class="source-tag">{{ work_titles.get(source, source) }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

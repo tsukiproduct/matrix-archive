@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-meta">{{ t.home_meta }} <span class="cursor"></span></div>
+    <h1>{{ t.home_h1_line1 }}<br>{{ t.home_h1_line2 }}</h1>
+    <p class="hero-sub">{{ t.home_sub | trim }}</p>
+    <div class="hero-stats">
+      <div>
+        <span class="stat-num">{{ event_count }}</span>
+        <span class="stat-label">{{ t.home_stat_events }}</span>
+      </div>
+      <div>
+        <span class="stat-num">{{ char_count }}</span>
+        <span class="stat-label">{{ t.home_stat_chars }}</span>
+      </div>
+      <div>
+        <span class="stat-num">06</span>
+        <span class="stat-label">{{ t.home_stat_cycles }}</span>
+      </div>
+      <div>
+        <span class="stat-num">{{ work_count }}</span>
+        <span class="stat-label">{{ t.home_stat_works }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>{{ t.home_section1_title }}</h2>
+      <span class="section-num">{{ t.home_section1_num }}</span>
+    </div>
+
+    <div class="card-grid">
+      <a href="timeline.html" class="card">
+        <span class="card-num">→ 01</span>
+        <h3 class="card-title">{{ t.home_card1_title }}</h3>
+        <p class="card-desc">{{ t.home_card1_desc | trim }}</p>
+        <span class="card-cta">{{ t.home_card1_cta }}</span>
+      </a>
+
+      <a href="cycles.html" class="card">
+        <span class="card-num">→ 02</span>
+        <h3 class="card-title">{{ t.home_card2_title }}</h3>
+        <p class="card-desc">{{ t.home_card2_desc | trim }}</p>
+        <span class="card-cta">{{ t.home_card2_cta }}</span>
+      </a>
+
+      <a href="characters.html" class="card">
+        <span class="card-num">→ 03</span>
+        <h3 class="card-title">{{ t.home_card3_title }}</h3>
+        <p class="card-desc">{{ t.home_card3_desc | trim }}</p>
+        <span class="card-cta">{{ t.home_card3_cta }}</span>
+      </a>
+
+      <a href="works.html" class="card">
+        <span class="card-num">→ 04</span>
+        <h3 class="card-title">{{ t.home_card4_title }}</h3>
+        <p class="card-desc">{{ t.home_card4_desc | trim }}</p>
+        <span class="card-cta">{{ t.home_card4_cta }}</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container reading">
+    <div class="section-head">
+      <h2>{{ t.home_section2_title }}</h2>
+      <span class="section-num">{{ t.home_section2_num }}</span>
+    </div>
+    <p>{{ t.home_about_p1 | trim }}</p>
+    <p>{{ t.home_about_p2 | trim }}</p>
+    <p>{{ t.home_about_p3 | trim }}</p>
+    <p class="dim" style="margin-top: 3rem; font-size: 0.85rem;">
+      {{ t.home_about_disclaimer }}
+    </p>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero" style="padding: 6rem 0 3rem;">
+  <div class="container">
+    <div class="hero-meta">{{ t.wk_meta }}</div>
+    <h1 style="font-size: clamp(2rem, 5vw, 3.5rem);">{{ t.wk_h1 }}</h1>
+    <p class="hero-sub">{{ t.wk_sub | trim }}</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <table class="works-table">
+      <thead>
+        <tr>
+          <th style="width: 60px;">{{ t.wk_th_year }}</th>
+          <th>{{ t.wk_th_title }}</th>
+          <th style="width: 100px;">{{ t.wk_th_medium }}</th>
+          <th style="width: 120px;">{{ t.wk_th_canon }}</th>
+          <th>{{ t.wk_th_notes }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for w in works %}
+        {% if not w.hidden %}
+        <tr>
+          <td class="mono dim">
+            {{ w.year }}{% if w.year_end %}–{{ w.year_end }}{% endif %}
+          </td>
+          <td>
+            <div class="work-title">{{ tr(w.title) }}</div>
+            {% if w.summary %}
+            <div class="dim" style="font-size: 0.85rem; margin-top: 0.25rem;">
+              {{ tr(w.summary) | trim }}
+            </div>
+            {% endif %}
+            {% if w.note %}
+            <div class="event-note" style="margin-top: 0.5rem; font-size: 0.8rem;">{{ tr(w.note) }}</div>
+            {% endif %}
+          </td>
+          <td><span class="medium-tag">{{ medium_label(w.medium) }}</span></td>
+          <td>
+            <span class="{% if w.canonicity == 'prime' %}canon-prime{% else %}canon-secondary{% endif %}">
+              {% if w.canonicity == 'prime' %}{{ t.wk_canon_prime }}{% else %}{{ t.wk_canon_secondary }}{% endif %}
+            </span>
+          </td>
+          <td>
+            {% if w.segments %}
+            <details>
+              <summary class="dim" style="cursor: pointer; font-size: 0.85rem;">
+                {{ w.segments | length }} {{ t.wk_segments_label }}
+              </summary>
+              <ul style="list-style: none; margin-top: 0.5rem; font-size: 0.8rem;">
+                {% for seg in w.segments %}
+                <li style="padding: 0.25rem 0; color: var(--ivory-dim);">
+                  <span style="color: var(--green);">·</span> {{ tr(seg.title) }}
+                  {% if seg.note %}
+                  <div style="color: var(--grey); padding-left: 1rem; font-style: italic;">{{ tr(seg.note) }}</div>
+                  {% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+            </details>
+            {% endif %}
+          </td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="container reading">
+    <div class="section-head">
+      <h2>{{ t.wk_section2_title }}</h2>
+      <span class="section-num">{{ t.wk_section2_num }}</span>
+    </div>
+    <p>{{ t.wk_about_p1 | trim }}</p>
+    <p>{{ t.wk_about_p2 | trim }}</p>
+    <p>{{ t.wk_about_p3 | trim }}</p>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero" style="padding: 6rem 0 3rem;">
+  <div class="container">
+    <div class="hero-meta">{{ t.ch_meta }}</div>
+    <h1 style="font-size: clamp(2rem, 5vw, 3.5rem);">{{ t.ch_h1 }}</h1>
+    <p class="hero-sub">{{ t.ch_sub | trim }}</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="char-filters">
+      <button class="filter-btn active" data-filter="all">{{ t.ch_filter_all }}</button>
+      <button class="filter-btn" data-filter="human">{{ t.ch_filter_human }}</button>
+      <button class="filter-btn" data-filter="program">{{ t.ch_filter_program }}</button>
+      <button class="filter-btn" data-filter="machine">{{ t.ch_filter_machine }}</button>
+      <button class="filter-btn" data-filter="location">{{ t.ch_filter_location }}</button>
+    </div>
+
+    <div class="char-grid">
+      {% for c in characters %}
+      <article class="char-card" data-type="{{ c.type }}" data-faction="{{ c.faction|default('') }}">
+        <div class="char-type">{{ type_label(c.type) }}{% if c.faction %} / {{ faction_label(c.faction) }}{% endif %}</div>
+        <h3 class="char-name">{{ tr(c.name) }}</h3>
+        {% if c.role %}<div class="char-role">{{ tr(c.role) }}</div>{% endif %}
+        {% if c.summary %}
+        <p class="char-summary">{{ tr(c.summary) | trim }}</p>
+        {% endif %}
+        {% if c.appears_in %}
+        <div class="char-appears">
+          {% for w in c.appears_in %}
+          <span class="source-tag">{{ work_titles.get(w, w) }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ asset_root }}js/filters.js"></script>
+{% endblock %}

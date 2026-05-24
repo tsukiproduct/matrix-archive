@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero" style="padding: 6rem 0 3rem;">
+  <div class="container">
+    <div class="hero-meta">{{ t.cy_meta }}</div>
+    <h1 style="font-size: clamp(2rem, 5vw, 3.5rem);">{{ t.cy_h1 }}</h1>
+    <p class="hero-sub">{{ t.cy_sub | trim }}</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>{{ t.cy_section1_title }}</h2>
+      <span class="section-num">{{ t.cy_section1_num }}</span>
+    </div>
+
+    <div class="cycles-grid">
+      {% for c in cycles %}
+      <div class="cycle-cell {% if c.number == 6 %}broken{% endif %}">
+        <span class="cycle-num">{{ "%02d" % c.number }}</span>
+        <span class="cycle-name">
+          {% if c.number == 6 %}NEO{% else %}{{ t.nav_cycles|upper }} {{ c.number }}{% endif %}
+        </span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <p style="text-align: center; font-family: var(--font-mono); font-size: 0.8rem; color: var(--grey); letter-spacing: 0.15em; text-transform: uppercase;">
+      <span style="color: var(--green-bright);">{{ t.cy_legend_done }}</span>
+      &nbsp;&nbsp;&nbsp;
+      <span style="color: var(--amber);">{{ t.cy_legend_broken }}</span>
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>{{ t.cy_section2_title }}</h2>
+      <span class="section-num">{{ t.cy_section2_num }}</span>
+    </div>
+
+    {% for c in cycles %}
+    <div class="cycle-detail {% if c.number == 6 %}broken{% endif %}">
+      <div class="cycle-detail-header">
+        <h3>{{ tr(c.label) }}</h3>
+        <span class="event-id">CYCLE.{{ "%02d" % c.number }}</span>
+      </div>
+
+      <div class="cycle-attr">
+        <span class="cycle-attr-label">{{ t.cy_attr_one }}</span>
+        <span class="cycle-attr-value">{{ tr(c.one_name) }}</span>
+      </div>
+      <div class="cycle-attr">
+        <span class="cycle-attr-label">{{ t.cy_attr_duration }}</span>
+        <span class="cycle-attr-value">{{ tr(c.duration) }}</span>
+      </div>
+      <div class="cycle-attr">
+        <span class="cycle-attr-label">{{ t.cy_attr_choice }}</span>
+        <span class="cycle-attr-value">{{ tr(c.one_choice) }}</span>
+      </div>
+      <div class="cycle-attr">
+        <span class="cycle-attr-label">{{ t.cy_attr_zion }}</span>
+        <span class="cycle-attr-value">{{ tr(c.zion_outcome) }}</span>
+      </div>
+      <div class="cycle-attr">
+        <span class="cycle-attr-label">{{ t.cy_attr_arch }}</span>
+        <span class="cycle-attr-value">{{ tr(c.architect_status) }}</span>
+      </div>
+
+      {% if c.notes %}
+      <div class="event-note" style="margin-top: var(--space-md);">{{ tr(c.notes) | trim }}</div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

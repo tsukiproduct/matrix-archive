@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ t.lang }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page_title }} — {{ t.site_title }}</title>
+<meta name="description" content="{{ t.site_title }}">
+<link rel="stylesheet" href="{{ asset_root }}css/matrix.css">
+<link rel="alternate" hreflang="ja" href="{{ alt_root_ja }}{{ page_filename }}">
+<link rel="alternate" hreflang="en" href="{{ alt_root_en }}{{ page_filename }}">
+<link rel="alternate" hreflang="x-default" href="{{ site_root }}{{ page_filename }}">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%234ade80'>▲</text></svg>">
+</head>
+<body>
+
+<canvas id="code-rain"></canvas>
+
+<header class="site-header">
+  <div class="container">
+    <a href="{{ root }}index.html" class="brand"><span class="brand-mark">{{ t.brand }}</span></a>
+    <nav>
+      <ul>
+        <li><a href="{{ root }}timeline.html" {% if page == 'timeline' %}class="active"{% endif %}>{{ t.nav_timeline }}</a></li>
+        <li><a href="{{ root }}cycles.html" {% if page == 'cycles' %}class="active"{% endif %}>{{ t.nav_cycles }}</a></li>
+        <li><a href="{{ root }}characters.html" {% if page == 'characters' %}class="active"{% endif %}>{{ t.nav_characters }}</a></li>
+        <li><a href="{{ root }}works.html" {% if page == 'works' %}class="active"{% endif %}>{{ t.nav_works }}</a></li>
+        <li class="lang-toggle"><a href="{{ alt_root }}{{ page_filename }}" data-lang-switch="{{ alt_lang }}">{{ t.lang_other }}</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="disclaimer">
+      <strong>{{ t.footer_disclaimer_title }}</strong>
+      {{ t.footer_disclaimer_body | trim }}
+      <br><br>
+      {{ t.footer_disclaimer_body2 | trim }}
+    </div>
+    <dl class="colophon">
+      <dt>{{ t.footer_archive }}</dt>
+      <dd>{{ t.footer_archive_v }}</dd>
+      <dt>{{ t.footer_build }}</dt>
+      <dd>{{ t.footer_build_v }}</dd>
+      <dt>{{ t.footer_method }}</dt>
+      <dd>{{ t.footer_method_v }}</dd>
+      <dt>{{ t.footer_type }}</dt>
+      <dd>{{ t.footer_type_v }}</dd>
+    </dl>
+  </div>
+</footer>
+
+<script src="{{ asset_root }}js/code-rain.js"></script>
+<script src="{{ asset_root }}js/lang.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>
