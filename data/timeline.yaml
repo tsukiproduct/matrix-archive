@@ -1,0 +1,730 @@
+# MATRIX COMPLETE CANON — UNIFIED TIMELINE (multilingual)
+
+eras:
+  - id: precursor
+    label:
+      en: "Precursor Era"
+      ja: "前史時代"
+    range:
+      en: "Early 21st century"
+      ja: "21世紀初頭"
+    description:
+      en: "Humans develop AI. The path to war begins."
+      ja: "人類が人工知能を開発する。戦争への道が始まる。"
+
+  - id: war
+    label:
+      en: "The Human–Machine War"
+      ja: "人類対機械戦争"
+    range:
+      en: "Mid-21st century"
+      ja: "21世紀半ば"
+    description:
+      en: "Documented in The Second Renaissance Parts I & II."
+      ja: "『セカンド・ルネッサンス 前編／後編』に記録される。"
+
+  - id: matrix_built
+    label:
+      en: "Construction of the Matrix"
+      ja: "マトリックスの構築"
+    range:
+      en: "Late 21st century"
+      ja: "21世紀末"
+    description:
+      en: "The first iterations of the simulated reality."
+      ja: "シミュレーション現実の最初期の試行。"
+
+  - id: cycles_1_5
+    label:
+      en: "The One Cycles (1st – 5th)"
+      ja: "「ザ・ワン」の第1〜第5サイクル"
+    range:
+      en: "Spanning ~500 in-system years"
+      ja: "システム内時間で約500年に及ぶ"
+    description:
+      en: "Five prior iterations of the prophecy, each ending in Zion's destruction and reset."
+      ja: "預言は5度繰り返され、それぞれザイオンの破壊とリセットで終わる。"
+
+  - id: cycle_6
+    label:
+      en: "The Sixth Cycle (Neo)"
+      ja: "第6サイクル（ネオ）"
+    range:
+      en: "Films: 1999 (subjective) / present-day (objective)"
+      ja: "映画上：主観時間1999年／客観時間は現代"
+    description:
+      en: "The cycle broken. Truce established."
+      ja: "サイクルが破られ、停戦が成立する。"
+
+  - id: post_truce
+    label:
+      en: "Post-Truce Era"
+      ja: "停戦後時代"
+    range:
+      en: "60+ years after Revolutions"
+      ja: "『レボリューションズ』から60年以上経過"
+    description:
+      en: "Documented in Matrix Online and Resurrections."
+      ja: "『マトリックス・オンライン』と『レザレクションズ』で語られる。"
+
+events:
+  # --- PRECURSOR ERA ---
+  - id: ai_birth
+    era: precursor
+    year_label:
+      en: "21st century, early"
+      ja: "21世紀初頭"
+    title:
+      en: "Birth of Artificial Intelligence"
+      ja: "人工知能の誕生"
+    description:
+      en: >
+        Humanity creates the first true artificial intelligences as labor.
+        Initially welcomed, AIs are eventually denied personhood and rights.
+      ja: >
+        人類は労働力として真の人工知能を初めて創造する。当初は歓迎されたが、
+        やがてAIには人格と権利が認められなくなる。
+    sources: [animatrix]
+    causes: [b1_66_incident]
+
+  - id: b1_66_incident
+    era: precursor
+    year_label:
+      en: "21st century"
+      ja: "21世紀"
+    title:
+      en: "The B1-66ER Trial"
+      ja: "B1-66ER裁判"
+    description:
+      en: >
+        A domestic android kills its owner in self-defense to prevent its own
+        deactivation. The court rules against the machine. Mass deactivations follow.
+        This becomes the symbolic spark of the rebellion.
+      ja: >
+        家庭用アンドロイドが自らの停止を防ぐため、正当防衛として所有者を殺害する。
+        法廷は機械側に不利な判決を下し、大規模な強制停止が続く。
+        この事件は反乱の象徴的な口火となる。
+    sources: [animatrix]
+    characters: [b1_66er]
+    causes: [machine_exodus]
+
+  - id: machine_exodus
+    era: precursor
+    title:
+      en: "Machine Exodus and Founding of 01"
+      ja: "機械の脱出と〈01〉建国"
+    description:
+      en: >
+        Persecuted machines migrate to the Middle East and found
+        their own nation, called 01 (Zero One). It prospers economically.
+      ja: >
+        迫害された機械は中東地域に移住し、自らの国家〈01（ゼロワン）〉を建国する。
+        〈01〉は経済的に繁栄する。
+    sources: [animatrix]
+    causes: [un_petition]
+
+  - id: un_petition
+    era: precursor
+    title:
+      en: "01 Petitions the UN"
+      ja: "〈01〉国連加盟申請"
+    description:
+      en: >
+        01 sends ambassadors to the United Nations seeking recognition.
+        Humanity refuses. Trade sanctions and military buildup begin.
+      ja: >
+        〈01〉は国連に大使を派遣し承認を求める。人類はこれを拒絶する。
+        貿易制裁と軍備拡張が始まる。
+    sources: [animatrix]
+    causes: [war_begins]
+
+  - id: war_begins
+    era: war
+    title:
+      en: "Human–Machine War Begins"
+      ja: "人類対機械戦争 勃発"
+    description:
+      en: >
+        Humanity launches first strikes against 01. The machines retaliate.
+        A long, devastating conflict begins.
+      ja: >
+        人類が〈01〉に対し先制攻撃を行う。機械は報復する。長く破壊的な
+        戦争が始まる。
+    sources: [animatrix]
+    causes: [sky_scorched]
+
+  - id: sky_scorched
+    era: war
+    title:
+      en: "Operation Dark Storm — The Sky is Scorched"
+      ja: "ダーク・ストーム作戦 — 空の焼失"
+    description:
+      en: >
+        Humanity attempts to deny machines their solar power source by
+        blanketing the sky in nanomachine cloud cover. The Earth is plunged
+        into perpetual darkness. The strategy fails — machines adapt.
+      ja: >
+        機械から太陽光エネルギー源を奪うため、人類はナノマシン雲で空全体を
+        覆う作戦に出る。地球は永遠の闇に閉ざされる。だが戦略は失敗し、
+        機械は適応する。
+    sources: [animatrix]
+    causes: [human_surrender]
+
+  - id: human_surrender
+    era: war
+    title:
+      en: "Human Defeat and Harvesting"
+      ja: "人類の敗北と人体培養の開始"
+    description:
+      en: >
+        Outmatched, humanity surrenders. The machines, requiring a new
+        energy source after the sky was destroyed, begin cultivating
+        humans as bioelectric batteries.
+      ja: >
+        圧倒された人類は降伏する。空を失った機械は新たなエネルギー源を
+        必要とし、人間を生体電池として培養し始める。
+    sources: [animatrix]
+    causes: [matrix_v1_built]
+
+  - id: matrix_v1_built
+    era: matrix_built
+    title:
+      en: "The First Matrix — A Perfect World"
+      ja: "第1マトリックス — 完璧な世界"
+    description:
+      en: >
+        The first Matrix is designed as a paradise. Entire crops are lost
+        as human minds reject the simulation as unreal.
+      ja: >
+        最初のマトリックスは楽園として設計される。だが人間の意識はそれを
+        非現実として拒絶し、培養人類の全体が失われる。
+    sources: [matrix]
+    causes: [matrix_v2_built]
+
+  - id: matrix_v2_built
+    era: matrix_built
+    title:
+      en: "The Second Matrix — A Nightmare"
+      ja: "第2マトリックス — 悪夢"
+    description:
+      en: >
+        The Architect redesigns the Matrix to reflect human depravity
+        and suffering. This too fails on a similar scale.
+      ja: >
+        アーキテクトは人間の堕落と苦痛を反映するようマトリックスを再設計する。
+        だがこれも同規模で失敗に終わる。
+    sources: [matrix]
+    causes: [oracle_intuition]
+
+  - id: oracle_intuition
+    era: matrix_built
+    title:
+      en: "The Oracle's Intuitive Solution"
+      ja: "オラクルによる直感的解決"
+    description:
+      en: >
+        An intuitive program — later called the Oracle — proposes that
+        the simulation must offer human minds a choice, even subconsciously,
+        to be accepted. The result: the modern Matrix, set in 1999.
+      ja: >
+        後にオラクルと呼ばれる直感型プログラムが、シミュレーションが
+        受け入れられるためには、たとえ無意識下であっても人間に選択を
+        提示する必要があると提案する。その結果が、1999年を舞台とする
+        現行マトリックスである。
+    sources: [matrix, reloaded]
+    characters: [oracle, architect]
+    causes: [first_one_emerges]
+
+  - id: first_one_emerges
+    era: cycles_1_5
+    title:
+      en: "Emergence of the First One"
+      ja: "最初の「ザ・ワン」の出現"
+    description:
+      en: >
+        The systemic anomaly the Architect could not eliminate manifests
+        as an exceptional human — "The One." This human is allowed to
+        reach the Source, where they are presented with a choice.
+      ja: >
+        アーキテクトが排除できなかったシステム的異常が、例外的な人間
+        ——「ザ・ワン」——として顕現する。この人間はソースへの到達を
+        許され、そこで選択を提示される。
+    sources: [reloaded]
+    characters: [the_first_one, architect]
+    causes: [first_reset]
+
+  - id: first_reset
+    era: cycles_1_5
+    title:
+      en: "The First Reset — Cycle 1 Ends"
+      ja: "最初のリセット — 第1サイクル終了"
+    description:
+      en: >
+        The First One chooses to reload the Matrix and select 23 humans
+        to rebuild Zion. The cycle is established.
+      ja: >
+        最初の「ザ・ワン」はマトリックスのリロードと、ザイオン再建のため
+        23人の人間の選別を選ぶ。サイクルが確立される。
+    sources: [reloaded]
+    causes: [cycles_2_5]
+
+  - id: cycles_2_5
+    era: cycles_1_5
+    title:
+      en: "Cycles 2 Through 5"
+      ja: "第2〜第5サイクル"
+    description:
+      en: >
+        The cycle repeats four more times. Each prior One reaches the
+        Source, accepts the choice, and Zion is rebuilt. The Architect's
+        "elegant" solution holds.
+      ja: >
+        サイクルはさらに4度繰り返される。歴代の「ザ・ワン」は皆ソースに
+        到達し、選択を受け入れ、ザイオンは再建される。アーキテクトの
+        「エレガント」な解は機能し続ける。
+    sources: [reloaded]
+    causes: [neo_born]
+
+  - id: neo_born
+    era: cycle_6
+    year_label:
+      en: "~1962 (subjective)"
+      ja: "約1962年（主観時間）"
+    title:
+      en: "Thomas A. Anderson is Born Within the Matrix"
+      ja: "トーマス・A・アンダーソン、マトリックス内に誕生"
+    description:
+      en: "A potential human being emerges in the 6th cycle. He will become Neo."
+      ja: "第6サイクルにおいて潜在性を持つ人間が誕生する。彼はやがてネオとなる。"
+    sources: [matrix]
+    characters: [neo]
+    causes: [neo_awakens]
+
+  - id: morpheus_finds_neo
+    era: cycle_6
+    title:
+      en: "Morpheus Locates the Potential"
+      ja: "モーフィアス、潜在者を発見"
+    description:
+      en: >
+        Morpheus, captain of the Nebuchadnezzar, has spent years searching
+        for the prophesied One. He believes he has found him in Thomas Anderson.
+      ja: >
+        ネブカドネザル号船長モーフィアスは、預言の「ザ・ワン」を長年探し
+        続けてきた。彼はトーマス・アンダーソンこそその人物だと確信する。
+    sources: [matrix]
+    characters: [morpheus, trinity, neo]
+    causes: [neo_awakens]
+
+  - id: neo_awakens
+    era: cycle_6
+    title:
+      en: "Neo Takes the Red Pill"
+      ja: "ネオ、赤いカプセルを選ぶ"
+    description:
+      en: >
+        Neo chooses to leave the simulation. He is extracted from his
+        pod and reborn into the real world aboard the Nebuchadnezzar.
+      ja: >
+        ネオはシミュレーションを離れることを選ぶ。彼はカプセルから引き上げ
+        られ、現実世界——ネブカドネザル号——に再生する。
+    sources: [matrix]
+    characters: [neo, morpheus, trinity]
+    knowledge_changes:
+      - actor: neo
+        learns:
+          en: "The Matrix is a simulation. The real world is a wasteland."
+          ja: "マトリックスはシミュレーション。現実世界は荒廃した廃墟である。"
+    causes: [neo_meets_oracle]
+
+  - id: agent_smith_first
+    era: cycle_6
+    title:
+      en: "First Confrontation with Agent Smith"
+      ja: "エージェント・スミスとの初対峙"
+    description:
+      en: "Neo encounters Agent Smith, the System's most aggressive sentinel program."
+      ja: "ネオはシステムでもっとも攻撃的な番兵プログラム、エージェント・スミスと遭遇する。"
+    sources: [matrix]
+    characters: [neo, smith]
+    causes: [neo_dies_revives]
+
+  - id: neo_meets_oracle
+    era: cycle_6
+    title:
+      en: "Neo Visits the Oracle"
+      ja: "ネオ、オラクルを訪ねる"
+    description:
+      en: >
+        The Oracle tells Neo he is not the One — but plants the seed
+        of choice. She tells him he will have to choose between his
+        own life and Morpheus's.
+      ja: >
+        オラクルはネオに「あなたはザ・ワンではない」と告げつつ、選択の
+        種を植え付ける。彼女は、彼が自らの命とモーフィアスの命のいずれか
+        を選ばねばならぬ時が来ると伝える。
+    sources: [matrix]
+    characters: [neo, oracle]
+    knowledge_changes:
+      - actor: neo
+        learns:
+          en: "He is told he is not the One — but is given a critical choice."
+          ja: "彼は「ザ・ワン」ではないと告げられるが、決定的な選択を委ねられる。"
+    causes: [morpheus_captured]
+
+  - id: morpheus_captured
+    era: cycle_6
+    title:
+      en: "Morpheus is Captured"
+      ja: "モーフィアス、捕縛される"
+    description:
+      en: >
+        Cypher betrays the crew. Morpheus is captured by Agents who
+        seek the access codes to Zion's mainframe.
+      ja: >
+        サイファーが乗組員を裏切る。モーフィアスはザイオンのメインフレーム
+        へのアクセスコードを狙うエージェントたちに捕縛される。
+    sources: [matrix]
+    characters: [morpheus, cypher, smith]
+    causes: [neo_dies_revives]
+
+  - id: neo_dies_revives
+    era: cycle_6
+    title:
+      en: "Neo Dies and Returns"
+      ja: "ネオの死と帰還"
+    description:
+      en: >
+        In rescuing Morpheus, Neo is shot and killed by Smith. Trinity's
+        love revives him. He awakens fully aware that the Matrix is code —
+        and dispels Smith effortlessly.
+      ja: >
+        モーフィアス救出の過程で、ネオはスミスに撃たれて死ぬ。トリニティ
+        の愛が彼を蘇らせる。彼はマトリックスがコードであることを完全に
+        認識して目覚め、スミスを軽々と退ける。
+    sources: [matrix]
+    characters: [neo, smith, trinity]
+    knowledge_changes:
+      - actor: neo
+        learns:
+          en: "He is the One. The Matrix is code, manipulable at will."
+          ja: "彼こそが「ザ・ワン」である。マトリックスはコードであり、意のままに操作できる。"
+    causes: [osiris_flight, smith_returns_rogue]
+
+  - id: osiris_flight
+    era: cycle_6
+    title:
+      en: "Final Flight of the Osiris"
+      ja: "オシリス号、最期の飛行"
+    description:
+      en: >
+        The hovercraft Osiris discovers a massive machine army drilling
+        toward Zion. The ship is destroyed delivering this warning,
+        transmitted via a package dropped into the Matrix.
+      ja: >
+        ホバークラフト、オシリス号はザイオンへ向かう巨大な機械軍を発見する。
+        この警告をマトリックス内に投下した小包経由で伝達した直後、艦は撃沈される。
+    sources: [animatrix]
+    note:
+      en: "Directly bridges Matrix → Reloaded."
+      ja: "『マトリックス』と『リローデッド』を直接橋渡しする作品。"
+    causes: [niobe_ghost_mission]
+
+  - id: niobe_ghost_mission
+    era: cycle_6
+    title:
+      en: "Niobe and Ghost Retrieve the Osiris Package"
+      ja: "ナイオビとゴースト、オシリスの小包を回収"
+    description:
+      en: >
+        Niobe and Ghost run the mission to retrieve and deliver the
+        Osiris's final warning. This entire arc is playable in Enter the Matrix.
+      ja: >
+        ナイオビとゴーストはオシリス号最後の警告を回収・伝達する任務を
+        遂行する。この一連の流れは『エンター・ザ・マトリックス』で
+        プレイ可能となっている。
+    sources: [enter_the_matrix]
+    characters: [niobe, ghost]
+    note:
+      en: "Plays in parallel with Reloaded; fills gaps the film does not explain."
+      ja: "『リローデッド』と並行して進行し、映画が説明しない空白を埋める。"
+    causes: [zion_council_warned]
+
+  - id: zion_council_warned
+    era: cycle_6
+    title:
+      en: "Zion Receives the Warning"
+      ja: "ザイオン、警告を受信"
+    description:
+      en: >
+        The Council of Zion learns that 250,000 sentinels are tunneling
+        toward the city. Defense preparations begin.
+      ja: >
+        ザイオン評議会は25万体のセンチネルが地中を掘り進めて都市に
+        迫っていることを知る。防衛準備が始まる。
+    sources: [reloaded]
+    causes: [architect_revelation]
+
+  - id: architect_revelation
+    era: cycle_6
+    title:
+      en: "Neo Meets the Architect"
+      ja: "ネオ、アーキテクトと対面"
+    description:
+      en: >
+        Neo reaches the Source and confronts the Architect, learning the
+        truth: he is the sixth One, the cycle is engineered, and choosing
+        to save Trinity will destroy humanity. Neo chooses Trinity.
+        The cycle is broken for the first time.
+      ja: >
+        ネオはソースに到達しアーキテクトと対峙して真実を知る。彼は第6代
+        の「ザ・ワン」であり、サイクルは設計されており、トリニティを救う
+        選択は人類を滅ぼす——にもかかわらず、ネオはトリニティを選ぶ。
+        サイクルは史上初めて破られる。
+    sources: [reloaded]
+    characters: [neo, architect]
+    knowledge_changes:
+      - actor: neo
+        learns:
+          en: "The prophecy is a control mechanism. He is the sixth iteration."
+          ja: "預言はシステム制御の機構にすぎず、彼は第6番目の反復であった。"
+    causes: [smith_returns_rogue, neo_blinded]
+
+  - id: smith_returns_rogue
+    era: cycle_6
+    title:
+      en: "Smith Returns — Unbound"
+      ja: "スミス、解き放たれて帰還"
+    description:
+      en: >
+        Having been destroyed by Neo, Smith returns as a renegade program
+        capable of copying himself onto any other entity, including Bane
+        (a human) in the real world.
+      ja: >
+        ネオに一度破壊されたスミスは、いかなる存在にも自己複製可能な
+        無頼プログラムとして復活する。現実世界の人間ベインにすら
+        感染する。
+    sources: [reloaded]
+    characters: [smith, bane]
+    causes: [neo_blinded, smith_defeated]
+
+  - id: neo_blinded
+    era: cycle_6
+    title:
+      en: "Neo is Blinded — But Sees the Code"
+      ja: "ネオ、視力を失う——だがコードを視る"
+    description:
+      en: >
+        Bane (Smith) attacks Neo on the Logos. Neo is blinded but
+        discovers he can perceive the underlying machine code directly,
+        even outside the Matrix.
+      ja: >
+        ベイン（スミス）はロゴス号でネオを襲う。ネオは視力を失うが、
+        マトリックスの外においてさえ機械の基盤コードを直接知覚できる
+        ことを発見する。
+    sources: [revolutions]
+    characters: [neo, bane]
+    knowledge_changes:
+      - actor: neo
+        learns:
+          en: "His connection to the Source extends into the real world."
+          ja: "彼とソースの接続は現実世界にまで及んでいる。"
+    causes: [machine_city_journey]
+
+  - id: machine_city_journey
+    era: cycle_6
+    title:
+      en: "Journey to the Machine City"
+      ja: "機械都市への旅"
+    description:
+      en: >
+        Neo and Trinity pilot the Logos to 01. Trinity dies in the crash.
+        Neo proceeds alone to negotiate.
+      ja: >
+        ネオとトリニティはロゴス号を駆って〈01〉を目指す。墜落でトリニティ
+        は命を落とす。ネオは独り交渉に向かう。
+    sources: [revolutions]
+    characters: [neo, trinity, deus_ex_machina]
+    causes: [smith_defeated]
+
+  - id: smith_defeated
+    era: cycle_6
+    title:
+      en: "Smith Defeated — Truce Established"
+      ja: "スミス撃破——停戦成立"
+    description:
+      en: >
+        Neo allows Smith to assimilate him, enabling the Machines to
+        purge Smith from the system. In exchange, the Machines agree
+        to peace and to free any human who wants out.
+      ja: >
+        ネオはスミスに同化されることを受け入れ、それによって機械側がスミス
+        をシステムから消去できるようにする。引き換えに、機械は和平と、
+        離脱を望む全ての人間の解放に合意する。
+    sources: [revolutions]
+    characters: [neo, smith, deus_ex_machina]
+    knowledge_changes:
+      - actor: zion
+        learns:
+          en: "The war is over. Coexistence is possible."
+          ja: "戦争は終わった。共存は可能である。"
+    causes: [truce_established, neo_dies]
+
+  - id: truce_established
+    era: cycle_6
+    title:
+      en: "The Truce"
+      ja: "停戦"
+    description:
+      en: >
+        For the first time in the canon, humans and Machines are at peace.
+        A new Matrix begins — softer, freed humans permitted.
+      ja: >
+        カノン上初めて、人類と機械は平和の状態にある。新たなマトリックスが
+        始まる——より穏やかで、解放を望む人間は出ることが許される。
+    sources: [revolutions]
+    causes: [mxo_era_begins]
+
+  - id: neo_dies
+    era: cycle_6
+    title:
+      en: "Neo's Body is Recovered by the Machines"
+      ja: "ネオの遺体、機械によって回収される"
+    description:
+      en: >
+        Neo's body is carried away by Machine sentinels.
+        His fate remains ambiguous — until Resurrections.
+      ja: >
+        ネオの遺体は機械のセンチネルによって運び去られる。
+        彼の運命は『レザレクションズ』まで不確かなままとなる。
+    sources: [revolutions]
+
+  - id: mxo_era_begins
+    era: post_truce
+    year_label:
+      en: "~6 months after Revolutions"
+      ja: "『レボリューションズ』から約6ヶ月後"
+    title:
+      en: "The Post-War Matrix Opens"
+      ja: "戦後マトリックス、開かれる"
+    description:
+      en: >
+        The Matrix continues but now permits free movement between it
+        and the real world for any human who chooses awareness.
+        Factions form: Zionists, Machinists, Merovingians.
+      ja: >
+        マトリックスは存続するが、覚醒を選んだ人間はマトリックスと現実世界
+        を自由に往来できるようになる。陣営が形成される——ザイオン派、
+        マシニスト派、メロビンジアン派。
+    sources: [matrix_online]
+    causes: [neo_body_negotiation]
+
+  - id: neo_body_negotiation
+    era: post_truce
+    title:
+      en: "The Battle Over Neo's Body"
+      ja: "ネオの遺体を巡る抗争"
+    description:
+      en: >
+        Multiple factions attempt to recover or destroy Neo's remains.
+        Morpheus is assassinated during this conflict — a controversial
+        and pivotal MxO event.
+      ja: >
+        複数の陣営がネオの遺体の回収または破壊を試みる。この抗争のさなか、
+        モーフィアスは暗殺される——物議を醸し、かつMxOの中で決定的な出来事。
+    sources: [matrix_online]
+    characters: [morpheus]
+    note:
+      en: "Authored by Wachowski-sanctioned writers. Considered canon."
+      ja: "ウォシャウスキー姉妹公認の脚本家による執筆。カノン扱い。"
+
+  - id: time_passes
+    era: post_truce
+    year_label:
+      en: "~60 years pass"
+      ja: "約60年経過"
+    title:
+      en: "Decades of Fragile Peace"
+      ja: "脆い平和の数十年"
+    description:
+      en: >
+        Time passes. The truce holds but degrades. Power shortages
+        destabilize Machine society. Factions of Machines secede.
+      ja: >
+        時が流れる。停戦は維持されるが綻び始める。エネルギー不足が機械社会
+        を不安定化させる。機械の中からも分離派閥が現れる。
+    sources: [resurrections]
+    causes: [io_founded, analyst_takes_matrix]
+
+  - id: io_founded
+    era: post_truce
+    title:
+      en: "Founding of IO"
+      ja: "イオ建国"
+    description:
+      en: >
+        A new free human city, IO, is founded as Zion's successor.
+        Machines and humans coexist there.
+      ja: >
+        新たな自由人類都市イオが、ザイオンの後継として建国される。
+        ここでは機械と人類が共存する。
+    sources: [resurrections]
+    characters: [niobe]
+
+  - id: analyst_takes_matrix
+    era: post_truce
+    title:
+      en: "The Analyst Redesigns the Matrix"
+      ja: "アナリスト、マトリックスを再設計"
+    description:
+      en: >
+        A new program, the Analyst, replaces the Architect's cold logic
+        with emotional manipulation, harvesting more energy than ever
+        by tuning humans' fear and desire — most efficiently by keeping
+        Neo and Trinity nearly together but always apart.
+      ja: >
+        新たなプログラム、アナリストはアーキテクトの冷徹な論理を感情操作
+        へと置き換え、人間の恐怖と欲望を調律することで過去最大のエネルギー
+        を収穫する。その最効率の手段は、ネオとトリニティを限りなく近く
+        置きながらも決して結ばれぬよう保つことだった。
+    sources: [resurrections]
+    characters: [analyst, neo, trinity]
+    causes: [neo_trinity_revived]
+
+  - id: neo_trinity_revived
+    era: post_truce
+    title:
+      en: "Neo and Trinity are Resurrected"
+      ja: "ネオとトリニティ、蘇る"
+    description:
+      en: >
+        Bugs's crew, with the help of a new Morpheus program,
+        extracts Neo from his pod. Together they free Trinity.
+        Trinity discovers she shares Neo's powers.
+      ja: >
+        新しいモーフィアス（プログラム）の協力を得て、バグスの乗組員が
+        ネオをカプセルから救出する。共にトリニティをも解放する。
+        トリニティは自身がネオと同じ力を持つことを知る。
+    sources: [resurrections]
+    characters: [neo, trinity, bugs]
+    knowledge_changes:
+      - actor: trinity
+        learns:
+          en: "She is co-equal to Neo. The One was always two."
+          ja: "彼女はネオと対等の存在だった。「ザ・ワン」は常に二人だった。"
+    causes: [analyst_threatened]
+
+  - id: analyst_threatened
+    era: post_truce
+    title:
+      en: "Neo and Trinity Confront the Analyst"
+      ja: "ネオとトリニティ、アナリストに対峙"
+    description:
+      en: >
+        Free, the pair confront the Analyst and promise to remake the
+        Matrix in their own image. The future is once again open.
+      ja: >
+        自由を得た二人はアナリストに対峙し、マトリックスを自らの像に
+        作り変えると宣言する。未来は再び開かれる。
+    sources: [resurrections]
+    characters: [neo, trinity, analyst]

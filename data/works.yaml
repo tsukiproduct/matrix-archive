@@ -1,0 +1,228 @@
+# MATRIX COMPLETE CANON — WORKS REGISTRY (multilingual)
+
+works:
+  - id: matrix
+    title:
+      en: "The Matrix"
+      ja: "マトリックス"
+    year: 1999
+    medium: film
+    runtime_min: 136
+    canonicity: prime
+    summary:
+      en: >
+        The original film. Thomas Anderson learns reality is a simulation
+        and chooses to become Neo, the One foretold by prophecy.
+      ja: >
+        原典となる第1作。トーマス・アンダーソンは現実がシミュレーションで
+        あることを知り、預言された「ザ・ワン」ネオとなる道を選ぶ。
+
+  - id: reloaded
+    title:
+      en: "The Matrix Reloaded"
+      ja: "マトリックス リローデッド"
+    year: 2003
+    medium: film
+    runtime_min: 138
+    canonicity: prime
+    summary:
+      en: >
+        Neo confronts the Architect and learns the One is part of a
+        systemic cycle of control. The Machine army approaches Zion.
+      ja: >
+        ネオはアーキテクトと対峙し、「ザ・ワン」がシステム的な制御サイクル
+        の一部であることを知る。機械軍がザイオンに迫る。
+
+  - id: revolutions
+    title:
+      en: "The Matrix Revolutions"
+      ja: "マトリックス レボリューションズ"
+    year: 2003
+    medium: film
+    runtime_min: 129
+    canonicity: prime
+    summary:
+      en: >
+        Neo journeys to the Machine City, defeats the unbound Smith,
+        and brokers an unprecedented peace between humans and Machines.
+      ja: >
+        ネオは機械の都市へ赴き、解き放たれたスミスを倒し、人間と機械の
+        前例なき和平を取り結ぶ。
+
+  - id: resurrections
+    title:
+      en: "The Matrix Resurrections"
+      ja: "マトリックス レザレクションズ"
+    year: 2021
+    medium: film
+    runtime_min: 148
+    canonicity: prime
+    summary:
+      en: >
+        Neo and Trinity are resurrected within a new iteration of the Matrix
+        run by the Analyst. They escape together and gain co-creative power.
+      ja: >
+        ネオとトリニティはアナリストが運営する新たなマトリックスの中で
+        蘇る。共に脱出し、世界を共に再創造する力を得る。
+
+  - id: animatrix
+    title:
+      en: "The Animatrix"
+      ja: "アニマトリックス"
+    year: 2003
+    medium: anthology
+    runtime_min: 102
+    canonicity: prime
+    summary:
+      en: >
+        Nine animated shorts expanding the universe. Includes the
+        definitive history of the Human–Machine War (The Second Renaissance).
+      ja: >
+        宇宙を拡張する9本のアニメ短編集。人類と機械の戦争史の決定版
+        『セカンド・ルネッサンス』を含む。
+    segments:
+      - title:
+          en: "Final Flight of the Osiris"
+          ja: "オシリス号、最期の飛行"
+        canonicity: prime
+        note:
+          en: "Directly precedes Reloaded; the disk delivered triggers the film's events."
+          ja: "『リローデッド』に直接接続。届けられたディスクが映画の出来事を引き起こす。"
+      - title:
+          en: "The Second Renaissance Part I"
+          ja: "セカンド・ルネッサンス 前編"
+        canonicity: prime
+        note:
+          en: "Foundational backstory: rise of machines, fall of humans."
+          ja: "基幹となる前史。機械の台頭と人類の凋落。"
+      - title:
+          en: "The Second Renaissance Part II"
+          ja: "セカンド・ルネッサンス 後編"
+        canonicity: prime
+        note:
+          en: "Sky scorching, human defeat, first crops."
+          ja: "空の焼失、人類の敗北、最初の人体培養。"
+      - title:
+          en: "Kid's Story"
+          ja: "キッズ・ストーリー"
+        canonicity: prime
+        note:
+          en: "Origin of Kid (appears in Reloaded/Revolutions)."
+          ja: "『リローデッド／レボリューションズ』に登場するキッドの起源。"
+      - title:
+          en: "Program"
+          ja: "プログラム"
+        canonicity: secondary
+        note:
+          en: "Standalone meditation on loyalty within the simulation."
+          ja: "シミュレーション内における忠誠を巡る独立した瞑想的小品。"
+      - title:
+          en: "World Record"
+          ja: "ワールド・レコード"
+        canonicity: secondary
+        note:
+          en: "Self-awakening via physical extremity."
+          ja: "身体的極限を通じた自己覚醒の物語。"
+      - title:
+          en: "Beyond"
+          ja: "ビヨンド"
+        canonicity: secondary
+        note:
+          en: "A glitched zone in the Matrix."
+          ja: "マトリックス内のグリッチ領域の物語。"
+      - title:
+          en: "A Detective Story"
+          ja: "ディテクティブ・ストーリー"
+        canonicity: secondary
+        note:
+          en: "Trinity hunted by a noir-era detective."
+          ja: "ノワール時代の探偵に追われるトリニティ。"
+      - title:
+          en: "Matriculated"
+          ja: "マトリキュレイテッド"
+        canonicity: secondary
+        note:
+          en: "Experiment on captured machine consciousness."
+          ja: "捕獲した機械意識への実験を描く。"
+
+  - id: enter_the_matrix
+    title:
+      en: "Enter the Matrix"
+      ja: "エンター・ザ・マトリックス"
+    year: 2003
+    medium: game
+    canonicity: prime
+    summary:
+      en: >
+        Plays in parallel with Reloaded. Follows Niobe and Ghost.
+        Contains scenes filmed by the Wachowskis exclusive to this game.
+      ja: >
+        『リローデッド』と並行して進行。ナイオビとゴーストを追う。
+        ウォシャウスキー姉妹自身が撮影した本ゲーム独自の実写シーンを含む。
+    note:
+      en: "Reloaded has plot holes that ONLY this game resolves."
+      ja: "『リローデッド』のプロット上の空隙は、本ゲームのみで解消される。"
+
+  - id: path_of_neo
+    title:
+      en: "The Path of Neo"
+      ja: "パス・オブ・ネオ"
+    year: 2005
+    medium: game
+    canonicity: secondary
+    summary:
+      en: >
+        Action-adventure retelling of the trilogy from Neo's perspective.
+        Includes alternate-ending divergence in final act.
+      ja: >
+        三部作をネオ視点で再構成したアクションアドベンチャー。
+        最終幕に分岐するオルタネート・エンディングを含む。
+
+  - id: matrix_online
+    title:
+      en: "The Matrix Online (MxO)"
+      ja: "マトリックス・オンライン (MxO)"
+    year: 2005
+    year_end: 2009
+    medium: mmo
+    canonicity: prime
+    summary:
+      en: >
+        Officially designated by the Wachowskis as the canonical continuation
+        of the story after Revolutions. Players witnessed live, scripted
+        events that advanced the post-truce world.
+      ja: >
+        『レボリューションズ』後の物語の正統続編としてウォシャウスキー姉妹
+        により公式に位置付けられた。プレイヤーはリアルタイムに脚本された
+        イベントを目撃し、停戦後の世界を進展させた。
+    note:
+      en: "Servers shut down July 2009. Canon events remain valid."
+      ja: "サーバーは2009年7月に閉鎖。カノン上の出来事は今も有効。"
+
+  - id: matrix_comics
+    title:
+      en: "The Matrix Comics"
+      ja: "マトリックス・コミックス"
+    year: 1999
+    year_end: 2004
+    medium: comics
+    canonicity: secondary
+    summary:
+      en: >
+        Anthology published on the official site, later collected.
+        Quality and canonicity vary by story.
+      ja: >
+        公式サイトで連載され後に書籍化されたアンソロジー。作品により
+        質と正典性が異なる。
+
+  - id: zero_one
+    title:
+      en: "(Reserved)"
+      ja: "（予約スロット）"
+    year: null
+    medium: tbd
+    canonicity: tbd
+    summary:
+      en: "Reserved slot for canon expansions."
+      ja: "カノン拡張用の予約スロット。"
+    hidden: true

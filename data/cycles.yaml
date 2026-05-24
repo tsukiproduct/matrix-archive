@@ -1,0 +1,145 @@
+# THE SIX ONE CYCLES (multilingual)
+
+cycles:
+  - number: 1
+    label:
+      en: "Cycle I — The First One"
+      ja: "第1サイクル — 最初の「ザ・ワン」"
+    one_name:
+      en: "The Prime / The First"
+      ja: "プライム／第1代"
+    duration:
+      en: "Unknown"
+      ja: "不明"
+    one_choice:
+      en: "Reset Matrix, select 23 to rebuild Zion"
+      ja: "マトリックスをリセット、23人を選別してザイオンを再建"
+    zion_outcome:
+      en: "Founded"
+      ja: "建国"
+    architect_status:
+      en: "Solution proven"
+      ja: "解として証明"
+    notes:
+      en: >
+        The original anomaly. The Architect could not eliminate the
+        systemic remainder produced by a perfect simulation; the Oracle
+        proposed converting the bug into a feature — a controlled outlet.
+      ja: >
+        原初の異常。アーキテクトは完全なシミュレーションが必然的に
+        生み出すシステム的残余を排除できなかった。オラクルはこのバグを
+        機能へと転換する——制御された排出口とする——案を提示した。
+
+  - number: 2
+    label:
+      en: "Cycle II"
+      ja: "第2サイクル"
+    one_name:
+      en: "(Unnamed)"
+      ja: "（名称不詳）"
+    duration:
+      en: "~100 in-system years (est.)"
+      ja: "システム内時間で約100年（推定）"
+    one_choice:
+      en: "Reset"
+      ja: "リセット"
+    zion_outcome:
+      en: "Destroyed and rebuilt"
+      ja: "破壊と再建"
+    architect_status:
+      en: "Refined"
+      ja: "精緻化"
+
+  - number: 3
+    label:
+      en: "Cycle III"
+      ja: "第3サイクル"
+    one_name:
+      en: "(Unnamed)"
+      ja: "（名称不詳）"
+    duration:
+      en: "~100 in-system years (est.)"
+      ja: "システム内時間で約100年（推定）"
+    one_choice:
+      en: "Reset"
+      ja: "リセット"
+    zion_outcome:
+      en: "Destroyed and rebuilt"
+      ja: "破壊と再建"
+    architect_status:
+      en: "Refined"
+      ja: "精緻化"
+
+  - number: 4
+    label:
+      en: "Cycle IV"
+      ja: "第4サイクル"
+    one_name:
+      en: "(Unnamed)"
+      ja: "（名称不詳）"
+    duration:
+      en: "~100 in-system years (est.)"
+      ja: "システム内時間で約100年（推定）"
+    one_choice:
+      en: "Reset"
+      ja: "リセット"
+    zion_outcome:
+      en: "Destroyed and rebuilt"
+      ja: "破壊と再建"
+    architect_status:
+      en: "Refined"
+      ja: "精緻化"
+
+  - number: 5
+    label:
+      en: "Cycle V"
+      ja: "第5サイクル"
+    one_name:
+      en: "(Unnamed)"
+      ja: "（名称不詳）"
+    duration:
+      en: "~100 in-system years (est.)"
+      ja: "システム内時間で約100年（推定）"
+    one_choice:
+      en: "Reset"
+      ja: "リセット"
+    zion_outcome:
+      en: "Destroyed and rebuilt"
+      ja: "破壊と再建"
+    architect_status:
+      en: "Refined"
+      ja: "精緻化"
+
+  - number: 6
+    label:
+      en: "Cycle VI — Neo"
+      ja: "第6サイクル — ネオ"
+    one_name:
+      en: "Neo / Thomas Anderson"
+      ja: "ネオ／トーマス・アンダーソン"
+    duration:
+      en: "The cycle that broke"
+      ja: "破られたサイクル"
+    one_choice:
+      en: "Reject reset. Choose Trinity. Break the loop."
+      ja: "リセットを拒否。トリニティを選び、ループを破断する。"
+    zion_outcome:
+      en: "Spared via Truce"
+      ja: "停戦によって生き残る"
+    architect_status:
+      en: "Equation broken — succeeded by the Analyst"
+      ja: "方程式は破られ、アナリストに引き継がれる"
+    notes:
+      en: >
+        Neo's deviation was not unprecedented in form — the Architect notes
+        all six Ones carried a residual attachment that made them human.
+        What was unprecedented was that Neo's attachment — to Trinity —
+        was specific, conscious, and chosen, and that he and the Oracle had
+        already prepared an alternative pathway: an alliance with the
+        Machines against Smith.
+      ja: >
+        ネオの逸脱はその形において前例のないものではなかった——アーキテクト
+        は歴代6人の「ザ・ワン」全員が人間性を残す残余的執着を持っていたと
+        指摘する。前例なきものとは、ネオの執着——トリニティへの——が
+        具体的・自覚的・選択的であったこと、そして彼とオラクルがすでに
+        代替経路、すなわち対スミス機械同盟を準備していたことだった。

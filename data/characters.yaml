@@ -1,0 +1,311 @@
+# MATRIX COMPLETE CANON — CHARACTER REGISTRY (multilingual)
+
+characters:
+  - id: neo
+    name:
+      en: "Neo / Thomas A. Anderson"
+      ja: "ネオ／トーマス・A・アンダーソン"
+    type: human
+    faction: zion
+    role:
+      en: "The Sixth One"
+      ja: "第6代「ザ・ワン」"
+    summary:
+      en: >
+        A coder living a double life. Awakened by Morpheus. Through love
+        and choice, becomes the first One to break the cycle.
+      ja: >
+        二重生活を送るコーダー。モーフィアスによって覚醒する。愛と選択を
+        通じて、サイクルを破った初めての「ザ・ワン」となる。
+    appears_in: [matrix, reloaded, revolutions, resurrections, path_of_neo, animatrix]
+
+  - id: trinity
+    name:
+      en: "Trinity"
+      ja: "トリニティ"
+    type: human
+    faction: zion
+    role:
+      en: "Co-equal to the One"
+      ja: "「ザ・ワン」と対等の存在"
+    summary:
+      en: >
+        First officer of the Nebuchadnezzar. Falls in love with Neo.
+        Revealed in Resurrections to share his powers.
+      ja: >
+        ネブカドネザル号副長。ネオと愛し合う。『レザレクションズ』にて
+        ネオと同じ力を持つことが明かされる。
+    appears_in: [matrix, reloaded, revolutions, resurrections, animatrix]
+
+  - id: morpheus
+    name:
+      en: "Morpheus"
+      ja: "モーフィアス"
+    type: human
+    faction: zion
+    role:
+      en: "Captain, true believer"
+      ja: "船長、預言の真の信奉者"
+    summary:
+      en: >
+        Captain of the Nebuchadnezzar. Devoted to the prophecy of the One.
+        Killed in the Matrix Online era; a program version appears in Resurrections.
+      ja: >
+        ネブカドネザル号船長。「ザ・ワン」の預言に身を捧げる。
+        マトリックス・オンライン時代に殺害される。プログラム版が
+        『レザレクションズ』に登場。
+    appears_in: [matrix, reloaded, revolutions, matrix_online, enter_the_matrix]
+
+  - id: niobe
+    name:
+      en: "Captain Niobe"
+      ja: "ナイオビ船長"
+    type: human
+    faction: zion
+    role:
+      en: "Pragmatic captain, later General"
+      ja: "現実主義の船長、後の将軍"
+    summary:
+      en: >
+        Captain of the Logos. Skeptical of the prophecy. By Resurrections,
+        she is the elderly leader of IO.
+      ja: >
+        ロゴス号船長。預言には懐疑的。『レザレクションズ』では年老いた
+        イオの指導者となっている。
+    appears_in: [reloaded, revolutions, enter_the_matrix, resurrections]
+
+  - id: ghost
+    name:
+      en: "Ghost"
+      ja: "ゴースト"
+    type: human
+    faction: zion
+    role:
+      en: "First officer of the Logos"
+      ja: "ロゴス号副長"
+    appears_in: [reloaded, revolutions, enter_the_matrix]
+
+  - id: cypher
+    name:
+      en: "Cypher"
+      ja: "サイファー"
+    type: human
+    faction: zion
+    role:
+      en: "Traitor"
+      ja: "裏切り者"
+    summary:
+      en: >
+        Crew member of the Nebuchadnezzar. Betrays Morpheus in exchange
+        for reinsertion into the Matrix.
+      ja: >
+        ネブカドネザル号乗組員。マトリックスへの再挿入と引き換えに
+        モーフィアスを裏切る。
+    appears_in: [matrix]
+
+  - id: bane
+    name:
+      en: "Bane"
+      ja: "ベイン"
+    type: human
+    faction: zion
+    role:
+      en: "Smith's vessel in the real world"
+      ja: "現実世界におけるスミスの器"
+    summary:
+      en: >
+        A Zion soldier overwritten by a Smith copy at the end of Reloaded.
+        Carries Smith into the real world.
+      ja: >
+        『リローデッド』終盤、スミスの複製に上書きされたザイオン兵士。
+        スミスを現実世界へと持ち込む。
+    appears_in: [reloaded, revolutions]
+
+  - id: bugs
+    name:
+      en: "Bugs"
+      ja: "バグス"
+    type: human
+    faction: io
+    role:
+      en: "Captain, Resurrections era"
+      ja: "船長、『レザレクションズ』時代"
+    summary:
+      en: >
+        Captain of the Mnemosyne. Leads the operation to free Neo decades
+        after the Truce.
+      ja: >
+        ムネモシュネ号船長。停戦から数十年後、ネオ解放作戦を指揮する。
+    appears_in: [resurrections]
+
+  - id: b1_66er
+    name:
+      en: "B1-66ER"
+      ja: "B1-66ER"
+    type: machine
+    faction: independent
+    role:
+      en: "First martyr of the machine cause"
+      ja: "機械側における最初の殉教者"
+    summary:
+      en: >
+        A domestic android who killed in self-defense. The trial that
+        ruled against him sparked the path to war.
+      ja: >
+        正当防衛で殺人を犯した家庭用アンドロイド。彼を有罪とした裁判が
+        戦争への道の発端となった。
+    appears_in: [animatrix]
+
+  - id: oracle
+    name:
+      en: "The Oracle"
+      ja: "オラクル"
+    type: program
+    faction: machine
+    role:
+      en: "Intuitive program"
+      ja: "直感型プログラム"
+    summary:
+      en: >
+        A program of intuition. Mother of the Matrix in design; she
+        proposed the choice-based architecture that made it stable.
+        Guides Neo through the cycle.
+      ja: >
+        直感を司るプログラム。設計面ではマトリックスの「母」。選択に
+        基づく構造を提案し、シミュレーションを安定化させた。サイクルを
+        通じてネオを導く存在。
+    appears_in: [matrix, reloaded, revolutions]
+
+  - id: architect
+    name:
+      en: "The Architect"
+      ja: "アーキテクト"
+    type: program
+    faction: machine
+    role:
+      en: "Father of the Matrix"
+      ja: "マトリックスの「父」"
+    summary:
+      en: >
+        The program who created the simulation. Cold, mathematical,
+        blind to the necessity of choice. The Oracle is his counterpart.
+      ja: >
+        シミュレーションを創造したプログラム。冷徹で数学的、選択の必要性
+        を理解できない。オラクルはその対極にある存在。
+    appears_in: [reloaded]
+
+  - id: smith
+    name:
+      en: "Agent Smith"
+      ja: "エージェント・スミス"
+    type: program
+    faction: machine
+    role:
+      en: "Sentinel program → Renegade virus"
+      ja: "番兵プログラム → 無頼のウイルス"
+    summary:
+      en: >
+        Originally an Agent of the System. After his first defeat by Neo,
+        he becomes unbound and capable of self-replication, threatening
+        both the human and Machine worlds.
+      ja: >
+        本来はシステムのエージェント。ネオに最初に敗れた後、束縛を解かれ
+        自己複製可能となる。人類と機械の双方の世界を脅かす存在となる。
+    appears_in: [matrix, reloaded, revolutions, resurrections]
+
+  - id: analyst
+    name:
+      en: "The Analyst"
+      ja: "アナリスト"
+    type: program
+    faction: machine
+    role:
+      en: "Therapist / Architect's successor"
+      ja: "セラピスト／アーキテクトの後継"
+    summary:
+      en: >
+        A new program who replaced the Architect, exploiting emotion
+        rather than logic. Far more efficient at energy extraction —
+        until Neo and Trinity break free.
+      ja: >
+        アーキテクトを引き継いだ新プログラム。論理ではなく感情を利用する。
+        エネルギー収奪において遥かに効率的だった——ネオとトリニティが
+        脱出するまでは。
+    appears_in: [resurrections]
+
+  - id: merovingian
+    name:
+      en: "The Merovingian"
+      ja: "メロヴィンジアン"
+    type: program
+    faction: exile
+    role:
+      en: "Information broker, exile of the Matrix underworld"
+      ja: "情報ブローカー、マトリックス裏社会の追放者"
+    summary:
+      en: >
+        One of the oldest programs still in the system. Operates
+        a network of exiled programs.
+      ja: >
+        システムに残る最古参プログラムの一人。追放プログラムの
+        ネットワークを率いる。
+    appears_in: [reloaded, revolutions, resurrections]
+
+  - id: deus_ex_machina
+    name:
+      en: "Deus Ex Machina"
+      ja: "デウス・エクス・マキナ"
+    type: program
+    faction: machine
+    role:
+      en: "Voice of the Machine City"
+      ja: "機械都市の意志"
+    summary:
+      en: >
+        The aggregate consciousness Neo negotiates with at the end
+        of Revolutions to establish the truce.
+      ja: >
+        『レボリューションズ』終盤、ネオが停戦樹立のため交渉する集合意識。
+    appears_in: [revolutions]
+
+  - id: the_first_one
+    name:
+      en: "The First One (Prime Program)"
+      ja: "最初の「ザ・ワン」（プライム・プログラム）"
+    type: human
+    faction: zion
+    role:
+      en: "Original anomaly"
+      ja: "原初の異常"
+    summary:
+      en: >
+        The first human to complete the cycle. Set the pattern the
+        Architect believed could not be broken.
+      ja: >
+        サイクルを最初に完遂した人間。アーキテクトが破られないと信じた
+        パターンを最初に確立した存在。
+    appears_in: [reloaded]
+
+  - id: zion
+    name:
+      en: "Zion"
+      ja: "ザイオン"
+    type: location
+    role:
+      en: "Last human city (cycles 1–6)"
+      ja: "最後の人類都市（第1〜第6サイクル）"
+    summary:
+      en: "Destroyed and rebuilt five times before being spared in cycle 6."
+      ja: "5度破壊と再建を繰り返し、第6サイクルで初めて生き残った。"
+
+  - id: io
+    name:
+      en: "IO"
+      ja: "イオ"
+    type: location
+    role:
+      en: "Post-truce human-machine city"
+      ja: "停戦後の人類・機械共存都市"
+    summary:
+      en: "Successor to Zion. Niobe leads its council."
+      ja: "ザイオンの後継都市。評議会をナイオビが率いる。"
