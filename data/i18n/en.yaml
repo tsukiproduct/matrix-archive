@@ -1,0 +1,207 @@
+# UI strings — English
+lang: en
+lang_label: EN
+lang_other: 日本語
+
+# === SITE ===
+site_title: "Matrix Complete Archive"
+brand: "MATRIX ARCHIVE"
+
+# === NAV ===
+nav_timeline: Timeline
+nav_cycles: Cycles
+nav_characters: Characters
+nav_works: Works
+
+# === HOME ===
+home_meta: "SYS / ARCHIVE / V1.0"
+home_h1_line1: "The Matrix"
+home_h1_line2: "Complete Canon Archive"
+home_sub: >
+  A research aggregation of every event, character, and cycle across
+  the films, anthology, games, and online era — assembled and written
+  entirely by its author.
+home_stat_events: Canonical events
+home_stat_chars: Characters tracked
+home_stat_cycles: One cycles documented
+home_stat_works: Works integrated
+
+home_section1_title: "Begin Here"
+home_section1_num: "01 / NAV"
+
+home_card1_title: Complete Timeline
+home_card1_desc: >
+  Every documented event from the rise of AI through the post-truce
+  era. Organized by era, with causal linkage and knowledge-state changes.
+home_card1_cta: Enter timeline
+
+home_card2_title: The Six Cycles
+home_card2_desc: >
+  A comparative reading of the five prior iterations of the One and
+  the sixth — Neo's — which broke the equation. The Architect's design
+  and its single point of failure.
+home_card2_cta: View cycles
+
+home_card3_title: Characters &amp; Programs
+home_card3_desc: >
+  Humans, programs, exiles, and the line between them. Filterable
+  by faction. Each entry traces appearances across the canon.
+home_card3_cta: Browse roster
+
+home_card4_title: Works Index
+home_card4_desc: >
+  All works in the canon, categorized by medium and canonicity.
+  Includes the films, the Animatrix anthology, the games, and the
+  Matrix Online era — the official continuation after Revolutions.
+home_card4_cta: See registry
+
+home_section2_title: "About this archive"
+home_section2_num: "02 / NOTE"
+
+home_about_p1: >
+  This archive treats the Matrix universe as a research subject.
+  Its goal is integration: the films alone leave gaps that the
+  anthology, games, and online era were created to fill, and the
+  resulting picture is denser and stranger than the trilogy suggests
+  on its own.
+home_about_p2: >
+  Most fan references reproduce promotional images, stills, and dialogue.
+  This one does not. Every page here is original prose, every diagram
+  is hand-built from canon data, and every event is cross-referenced
+  to the work it appears in. No copyrighted material is reproduced.
+home_about_p3: >
+  The project is structured: a data layer (YAML) feeds a build system
+  (Python + Jinja2) which produces this site. Adding a newly documented
+  event means editing one file, not many. The architecture is built to grow.
+home_about_disclaimer: "▲ Independent research project. Not affiliated with any rightsholder."
+
+# === TIMELINE ===
+tl_meta: "→ 01 / TIMELINE"
+tl_h1: "The Complete Timeline"
+tl_sub: >
+  Every documented event of the canon, organized across six eras —
+  from the first synthetic life to the post-truce world. Each event
+  cites the work it appears in. Knowledge changes — what was learned,
+  and by whom — are marked.
+tl_era_label: "Era"
+tl_note_prefix: "NOTE — "
+tl_knowledge_prefix: "◆"
+
+# === CYCLES ===
+cy_meta: "→ 02 / CYCLES"
+cy_h1: "The Six Cycles of the One"
+cy_sub: >
+  The Architect's elegant solution: an anomaly built into the system,
+  released periodically to drain instability without destroying the
+  simulation. It worked five times. The sixth time, it did not.
+
+cy_section1_title: "At a glance"
+cy_section1_num: "02.1 / SUMMARY"
+cy_legend_done: "● Cycle completed as designed"
+cy_legend_broken: "● Cycle broken"
+
+cy_section2_title: "Detailed comparison"
+cy_section2_num: "02.2 / DETAIL"
+
+cy_attr_one: "The One"
+cy_attr_duration: "Duration"
+cy_attr_choice: "The Choice"
+cy_attr_zion: "Zion Outcome"
+cy_attr_arch: "Architect Status"
+
+# === CHARACTERS ===
+ch_meta: "→ 03 / CHARACTERS"
+ch_h1: "Characters &amp; Programs"
+ch_sub: >
+  The roster spans humans, machine programs, exiles, and the ambiguous
+  figures who blur the line. Each entry traces faction, role, and where
+  the character appears across the canon.
+
+ch_filter_all: "All"
+ch_filter_human: "Humans"
+ch_filter_program: "Programs"
+ch_filter_machine: "Machines"
+ch_filter_location: "Locations"
+
+# === WORKS ===
+wk_meta: "→ 04 / WORKS"
+wk_h1: "Works Index"
+wk_sub: >
+  All works in the canon, sorted by year. The Matrix story exists
+  across films, an animated anthology, video games, an MMO that served
+  as official continuation, and comics — each contributing pieces the
+  others cannot.
+
+wk_th_year: "Year"
+wk_th_title: "Title"
+wk_th_medium: "Medium"
+wk_th_canon: "Canonicity"
+wk_th_notes: "Notes"
+
+wk_canon_prime: "● PRIME"
+wk_canon_secondary: "○ SECONDARY"
+wk_segments_label: "segments"
+
+wk_section2_title: "On canonicity"
+wk_section2_num: "04.2 / NOTE"
+wk_about_p1: >
+  Prime canon includes works the Wachowskis directly authored or
+  sanctioned as part of the central story. This includes the four films,
+  the entirety of <em>The Animatrix</em>, <em>Enter the Matrix</em>,
+  and <em>The Matrix Online</em> — which was officially designated as
+  the canonical continuation of the story after <em>Revolutions</em>.
+wk_about_p2: >
+  Secondary canon covers works that operate within the universe but
+  are not part of the main story thread, or whose canonicity has been
+  less rigorously affirmed — including several Animatrix shorts,
+  <em>Path of Neo</em>, and most of the comics.
+wk_about_p3: >
+  The result is denser than the trilogy suggests. <em>Reloaded</em>
+  contains a key plot beat — the disk delivered from the Osiris —
+  whose entire delivery arc plays out across <em>Final Flight of the
+  Osiris</em> and <em>Enter the Matrix</em>. The death of Morpheus,
+  central to the post-truce era, occurs not in any film but in the
+  online era.
+
+# === MEDIUM LABELS ===
+medium_film: film
+medium_anthology: anthology
+medium_game: game
+medium_mmo: MMO
+medium_comics: comics
+medium_tbd: TBD
+
+# === FACTION LABELS ===
+faction_zion: Zion
+faction_machine: Machine
+faction_exile: Exile
+faction_independent: Independent
+faction_io: IO
+
+# === TYPE LABELS ===
+type_human: human
+type_program: program
+type_machine: machine
+type_location: location
+
+# === FOOTER ===
+footer_disclaimer_title: "Disclaimer"
+footer_disclaimer_body: >
+  This is an independent fan research archive, written entirely by its
+  author. It is not affiliated with, endorsed by, or sponsored by
+  Warner Bros. Entertainment Inc., Village Roadshow Pictures, the
+  Wachowskis, or any rightsholder of the Matrix franchise. The Matrix
+  and all related properties are © Warner Bros. Entertainment Inc.
+footer_disclaimer_body2: >
+  No copyrighted images, dialogue, music, or footage are reproduced.
+  Names of works, characters, and concepts are used nominatively for
+  the purpose of scholarly commentary and research.
+
+footer_archive: "Archive"
+footer_archive_v: "Matrix Complete Archive"
+footer_build: "Build"
+footer_build_v: "v1.1 — Generated from structured canon data"
+footer_method: "Method"
+footer_method_v: "YAML → Jinja2 → static HTML"
+footer_type: "Type"
+footer_type_v: "Non-commercial · research only"

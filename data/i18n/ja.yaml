@@ -1,0 +1,201 @@
+# UI strings — Japanese
+lang: ja
+lang_label: 日本語
+lang_other: EN
+
+# === SITE ===
+site_title: "マトリックス完全アーカイブ"
+brand: "MATRIX ARCHIVE"
+
+# === NAV ===
+nav_timeline: 年表
+nav_cycles: サイクル
+nav_characters: キャラクター
+nav_works: 作品
+
+# === HOME ===
+home_meta: "SYS / ARCHIVE / V1.0"
+home_h1_line1: "マトリックス"
+home_h1_line2: "完全カノンアーカイブ"
+home_sub: >
+  映画・アンソロジー・ゲーム・オンライン時代に至るまで、
+  全ての出来事・人物・サイクルを統合した
+  独立系リサーチアーカイブ。全文執筆。
+home_stat_events: 正史イベント
+home_stat_chars: 登録キャラクター
+home_stat_cycles: 「ワン」のサイクル
+home_stat_works: 統合された作品
+
+home_section1_title: "ここから始める"
+home_section1_num: "01 / NAV"
+
+home_card1_title: 完全年表
+home_card1_desc: >
+  AI誕生から戦後の世界まで、記録された全ての出来事。
+  時代区分ごとに整理し、因果関係と「誰がいつ何を知ったか」を明示。
+home_card1_cta: 年表を開く
+
+home_card2_title: 6つのサイクル
+home_card2_desc: >
+  「ワン」の5度の反復と、ネオによって破られた6度目。
+  アーキテクトの設計と、その唯一の盲点の比較分析。
+home_card2_cta: サイクルを見る
+
+home_card3_title: 人物とプログラム
+home_card3_desc: >
+  人間・プログラム・追放者、そしてその境界を曖昧にする者たち。
+  陣営別フィルタ対応。各エントリは作品横断で出演を追跡。
+home_card3_cta: 名簿を見る
+
+home_card4_title: 作品索引
+home_card4_desc: >
+  全カノン作品をメディア・正典性別に整理。映画、アニマトリックス、
+  ゲーム、そして『レボリューションズ』後の公式継続作とされた
+  マトリックス・オンライン時代を含む。
+home_card4_cta: 一覧を見る
+
+home_section2_title: "本アーカイブについて"
+home_section2_num: "02 / NOTE"
+
+home_about_p1: >
+  本アーカイブはマトリックスの宇宙を研究対象として扱う。目的は統合だ。
+  映画単体ではアンソロジー、ゲーム、オンライン時代によって埋められる
+  べき空隙が残されており、それらを総合した全体像は、三部作だけが示唆
+  するよりも遥かに濃密で奇妙だ。
+home_about_p2: >
+  既存のファンサイトの多くは宣伝画像やスチル、台詞を転載している。
+  本アーカイブはそれをしない。全ページが書き下ろし、全図解はカノン
+  データから手作りで構築され、全イベントは出典作品とクロスリファレンス
+  されている。著作物の複製は一切行わない。
+home_about_p3: >
+  プロジェクトは構造化されている。データ層（YAML）がビルドシステム
+  （Python + Jinja2）を介して本サイトを生成する。新たに発掘された
+  イベントを追加するには1ファイルを編集するだけで済む。拡張可能な設計だ。
+home_about_disclaimer: "▲ 独立リサーチプロジェクト。いかなる権利者とも無関係。"
+
+# === TIMELINE ===
+tl_meta: "→ 01 / TIMELINE"
+tl_h1: "完全年表"
+tl_sub: >
+  カノン記録された全イベントを6つの時代に整理。最初の合成生命体から
+  戦後の世界まで。各イベントは出典作品を明示し、「誰が何を学んだか」
+  という知識変化を記す。
+tl_era_label: "時代"
+tl_note_prefix: "NOTE — "
+tl_knowledge_prefix: "◆"
+
+# === CYCLES ===
+cy_meta: "→ 02 / CYCLES"
+cy_h1: "「ワン」の6つのサイクル"
+cy_sub: >
+  アーキテクトのエレガントな解：システムに組み込まれた異常を周期的に
+  解放し、シミュレーションを破壊することなく不安定さを排出する。
+  この方式は5度機能した。6度目は機能しなかった。
+
+cy_section1_title: "一覧"
+cy_section1_num: "02.1 / SUMMARY"
+cy_legend_done: "● 設計通り完了したサイクル"
+cy_legend_broken: "● 破られたサイクル"
+
+cy_section2_title: "詳細比較"
+cy_section2_num: "02.2 / DETAIL"
+
+cy_attr_one: "ザ・ワン"
+cy_attr_duration: "継続期間"
+cy_attr_choice: "選択"
+cy_attr_zion: "ザイオンの帰結"
+cy_attr_arch: "アーキテクト評価"
+
+# === CHARACTERS ===
+ch_meta: "→ 03 / CHARACTERS"
+ch_h1: "キャラクターとプログラム"
+ch_sub: >
+  名簿は人間、機械プログラム、追放者、そしてその境界を曖昧にする者たち
+  を含む。各エントリには陣営、役割、そしてカノン横断での登場作品を記す。
+
+ch_filter_all: "すべて"
+ch_filter_human: "人間"
+ch_filter_program: "プログラム"
+ch_filter_machine: "機械"
+ch_filter_location: "場所"
+
+# === WORKS ===
+wk_meta: "→ 04 / WORKS"
+wk_h1: "作品索引"
+wk_sub: >
+  全カノン作品を年代順に整理。マトリックスの物語は映画、アニメーション
+  アンソロジー、ビデオゲーム、公式継続作として位置付けられたMMO、
+  そしてコミックを横断して存在する。それぞれが他では補えない断片を担う。
+
+wk_th_year: "年"
+wk_th_title: "タイトル"
+wk_th_medium: "媒体"
+wk_th_canon: "正典性"
+wk_th_notes: "備考"
+
+wk_canon_prime: "● プライム"
+wk_canon_secondary: "○ セカンダリ"
+wk_segments_label: "話"  # "9話" のような表示用
+
+wk_section2_title: "正典性について"
+wk_section2_num: "04.2 / NOTE"
+wk_about_p1: >
+  プライム・カノンとは、ウォシャウスキー姉妹が直接執筆またはストーリー
+  の中核として承認した作品群を指す。これには4本の映画、『アニマトリックス』
+  全話、『エンター・ザ・マトリックス』、そして『レボリューションズ』後の
+  公式継続作として位置付けられた『マトリックス・オンライン』が含まれる。
+wk_about_p2: >
+  セカンダリ・カノンとは、宇宙内で機能するが本筋の物語スレッドからは
+  外れる作品、あるいは正典性の確認が厳密になされていない作品を指す。
+  これには『アニマトリックス』の数編、『パス・オブ・ネオ』、そしてコミック
+  の大部分が含まれる。
+wk_about_p3: >
+  結果として全体は三部作が示唆するよりも遥かに濃密だ。『リローデッド』
+  にはオシリスから運ばれたディスクという重要なプロットポイントがあるが、
+  その配送過程は『ファイナル・フライト・オブ・オシリス』と『エンター・
+  ザ・マトリックス』を横断してのみ完結する。戦後時代の中心となる
+  モーフィアスの死は、いかなる映画でもなくオンライン時代に発生する。
+
+# === MEDIUM LABELS ===
+medium_film: 映画
+medium_anthology: アンソロジー
+medium_game: ゲーム
+medium_mmo: MMO
+medium_comics: コミック
+medium_tbd: 未定
+
+# === FACTION LABELS ===
+faction_zion: ザイオン
+faction_machine: 機械陣営
+faction_exile: 追放者
+faction_independent: 独立
+faction_io: IO
+
+# === TYPE LABELS ===
+type_human: 人間
+type_program: プログラム
+type_machine: 機械
+type_location: 場所
+
+# === FOOTER ===
+footer_disclaimer_title: "免責事項"
+footer_disclaimer_body: >
+  本サイトは独立したファンによるリサーチアーカイブであり、その著者が
+  全文を執筆しています。Warner Bros. Entertainment Inc.、Village Roadshow
+  Pictures、ウォシャウスキー姉妹、その他『マトリックス』フランチャイズの
+  いかなる権利者とも、提携・承認・支援関係にはありません。『マトリックス』
+  および関連する全ての知的財産は © Warner Bros. Entertainment Inc. に
+  帰属します。
+footer_disclaimer_body2: >
+  著作物としての画像、台詞、音楽、映像は一切再現していません。作品名、
+  キャラクター名、概念名は、学術的論評および研究の目的において指示的に
+  使用しています。
+
+footer_archive: "アーカイブ"
+footer_archive_v: "マトリックス完全アーカイブ"
+footer_build: "ビルド"
+footer_build_v: "v1.1 — 構造化カノンデータから生成"
+footer_method: "方式"
+footer_method_v: "YAML → Jinja2 → 静的HTML"
+footer_type: "種別"
+footer_type_v: "非商用 · 研究目的"
